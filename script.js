@@ -28,8 +28,13 @@
 // ── reduced-motion flag, used to skip heavy decorative effects below ──
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// ── 1. PAGE LOADER ──────────────────────
+// ── 1. PAGE LOADER (shown once per visit only) ──
 (function() {
+  // If we've already shown the loader once this session, skip it entirely —
+  // don't create the element, don't touch scroll, just bail.
+  if (sessionStorage.getItem('lg-loaded')) return;
+  sessionStorage.setItem('lg-loaded', '1');
+
   const loader = document.createElement('div');
   loader.id = 'page-loader';
   loader.innerHTML = `
