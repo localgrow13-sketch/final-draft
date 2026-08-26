@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Local Grow — Web Developer</title>
+<meta name="description" content="Local Grow — affordable, mobile-first websites built for small businesses in India. Landing pages, business sites, and portfolios." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='36' y2='36' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0%25' stop-color='%238c6d1f'/%3E%3Cstop offset='100%25' stop-color='%23d4aa50'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='18' cy='18' r='17' fill='url(%23g)'/%3E%3Cpath d='M18 8 C18 8 26 13 26 20 C26 25 22.5 28 18 28 C13.5 28 10 25 10 20 C10 13 18 8 18 8Z' fill='rgba(255,255,255,0.3)'/%3E%3Cline x1='18' y1='28' x2='18' y2='32' stroke='rgba(255,255,255,0.6)' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M18 14 C18 14 14 19 13 23' stroke='rgba(255,255,255,0.5)' stroke-width='1' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='22' cy='10' r='1.2' fill='rgba(255,255,255,0.7)'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <!-- SVG leaf/grow icon -->
+    <svg class="logo-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="18" r="17" fill="url(#logoGrad)" />
+      <!-- leaf shape -->
+      <path d="M18 8 C18 8 26 13 26 20 C26 25 22.5 28 18 28 C13.5 28 10 25 10 20 C10 13 18 8 18 8Z" fill="rgba(255,255,255,0.25)" />
+      <!-- stem -->
+      <line x1="18" y1="28" x2="18" y2="32" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- vein -->
+      <path d="M18 14 C18 14 14 19 13 23" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round" fill="none"/>
+      <!-- sparkle top -->
+      <circle cx="22" cy="10" r="1.2" fill="rgba(255,255,255,0.7)"/>
+      <circle cx="25" cy="14" r=".7" fill="rgba(255,255,255,0.5)"/>
+      <defs>
+        <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#8c6d1f"/>
+          <stop offset="100%" stop-color="#d4aa50"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <div>
+      <span class="logo-text-main">Local Grow</span>
+      <span class="logo-text-sub">Web Developer</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="contact.html">Hire Me</a>
+  <!-- hamburger button, shown only on mobile/tablet -->
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- dim background behind the mobile nav panel -->
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<!-- mobile navigation panel -->
+<ul class="nav-links-mobile" id="nav-links-mobile">
+  <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a class="nav-cta" href="contact.html">Hire Me</a></li>
+</ul>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span class="badge-dot"></span>Available for work</div>
+    <h1>I Build Websites<br>People <em>Love to Use.</em></h1>
+    <p class="hero-desc">Hi, I'm Local Grow — a passionate web developer crafting clean, fast, and beautiful websites tailored to your needs. Affordable prices, quality results.</p>
+    <div class="hero-btns">
+      <a class="btn-gold" href="contact.html">Work with me</a>
+      <a class="btn-outline" href="#projects">See my work</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <!-- wide top photo -->
+    <div class="hero-photo">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgOTAwIDQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdXZWIgRGV2ZWxvcG1lbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMWExYTJlIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzE2MjEzZSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjZ1dlYiBEZXZlbG9wbWVudCkiLz4KICA8dGV4dCB4PSI0NTAiIHk9IjE4MCIgZm9udC1zaXplPSI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNlcmlmIj7wn5K7PC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iMjcwIiBmb250LXNpemU9IjI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuOSkiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+V2ViIERldmVsb3BtZW50PC90ZXh0Pgo8L3N2Zz4="
+           alt="Web development code editor" loading="lazy" onerror="this.src='https://picsum.photos/seed/code/900/400'" />
+      <div class="hero-photo-badge">✦ Web Developer · India</div>
+    </div>
+    <!-- two smaller photos -->
+    <div class="hero-photo">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgOTAwIDQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdDb2xsYWJvcmF0aW9uIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzJkMWI2OSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxMTk5OGUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2dDb2xsYWJvcmF0aW9uKSIvPgogIDx0ZXh0IHg9IjQ1MCIgeT0iMTgwIiBmb250LXNpemU9IjgwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiBmb250LWZhbWlseT0ic2VyaWYiPvCfpJ08L3RleHQ+CiAgPHRleHQgeD0iNDUwIiB5PSIyNzAiIGZvbnQtc2l6ZT0iMjgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC45KSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtd2VpZ2h0PSJib2xkIj5Db2xsYWJvcmF0aW9uPC90ZXh0Pgo8L3N2Zz4="
+           alt="Developer working on laptop" loading="lazy" onerror="this.src='https://picsum.photos/seed/desk/600/300'" />
+    </div>
+    <div class="hero-photo">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgOTAwIDQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdDbGVhbiBEZXNpZ24iIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojOGM2ZDFmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2Q0YWE1MCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjZ0NsZWFuIERlc2lnbikiLz4KICA8dGV4dCB4PSI0NTAiIHk9IjE4MCIgZm9udC1zaXplPSI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNlcmlmIj7wn46oPC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iMjcwIiBmb250LXNpemU9IjI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuOSkiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+Q2xlYW4gRGVzaWduPC90ZXh0Pgo8L3N2Zz4="
+           alt="Web design on screen" loading="lazy" onerror="this.src='https://picsum.photos/seed/laptop/600/300'" />
+    </div>
+    <!-- stat card -->
+    <div class="hero-stat-card">
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Websites Delivered</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">₹1,000</div>
+          <div class="stat-label">Starting Price</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">40%</div>
+          <div class="stat-label">Advance Required</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-label" style="margin-bottom:.65rem;">Tech Stack</div>
+      <div class="skill-tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span>
+        <span class="tag">JavaScript</span><span class="tag">Responsive</span>
+        <span class="tag">Mobile-first</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects">
+  <div class="section-label reveal">Recent work</div>
+  <h2 class="section-title reveal reveal-delay-1">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgOTAwIDQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdDYWbDqSBBcm9tYSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMzZDFjMDIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojYTA1MjJkIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNnQ2Fmw6kgQXJvbWEpIi8+CiAgPHRleHQgeD0iNDUwIiB5PSIxODAiIGZvbnQtc2l6ZT0iODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzZXJpZiI+4piVPC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iMjcwIiBmb250LXNpemU9IjI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuOSkiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+Q2Fmw6kgQXJvbWE8L3RleHQ+Cjwvc3ZnPg=="
+             alt="Café Aroma project" loading="lazy" onerror="this.src='https://picsum.photos/seed/cafe/600/300'" />
+      </div>
+      <div class="project-body">
+        <div class="project-icon">☕</div>
+        <div class="project-name">Café Aroma</div>
+        <p class="project-desc">A warm landing page for a local café, featuring their menu, gallery, and contact form.</p>
+        <div class="project-stack"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+        <!-- project action buttons — replace href="#" with real links when available -->
+        <div class="project-btns">
+          <a class="btn-project btn-project-view" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgOTAwIDQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdHcmVlbkxlYWYgU3RvcmUiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMWEzYTFhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzJkOGEyZCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjZ0dyZWVuTGVhZiBTdG9yZSkiLz4KICA8dGV4dCB4PSI0NTAiIHk9IjE4MCIgZm9udC1zaXplPSI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y/PC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iMjcwIiBmb250LXNpemU9IjI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuOSkiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+R3JlZW5MZWFmIFN0b3JlPC90ZXh0Pgo8L3N2Zz4="
+             alt="GreenLeaf Store project" loading="lazy" onerror="this.src='https://picsum.photos/seed/plant/600/300'" />
+      </div>
+      <div class="project-body">
+        <div class="project-icon">🌿</div>
+        <div class="project-name">GreenLeaf Store</div>
+        <p class="project-desc">An online plant shop with product listings and a fresh green aesthetic.</p>
+        <div class="project-stack"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+        <div class="project-btns">
+          <a class="btn-project btn-project-view" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-3">
+      <div class="project-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgOTAwIDQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdUdXRvciBIdWIiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMWEyMDQwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzJhNTI5OCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjZ1R1dG9yIEh1YikiLz4KICA8dGV4dCB4PSI0NTAiIHk9IjE4MCIgZm9udC1zaXplPSI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNlcmlmIj7wn5OaPC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iMjcwIiBmb250LXNpemU9IjI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuOSkiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+VHV0b3IgSHViPC90ZXh0Pgo8L3N2Zz4="
+             alt="Tutor Hub project" loading="lazy" onerror="this.src='https://picsum.photos/seed/study/600/300'" />
+      </div>
+      <div class="project-body">
+        <div class="project-icon">📚</div>
+        <div class="project-name">Tutor Hub</div>
+        <p class="project-desc">A tutoring services website with class schedules, instructor bios, and a booking form.</p>
+        <div class="project-stack"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+        <div class="project-btns">
+          <a class="btn-project btn-project-view" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<div class="cta-banner reveal">
+  <div>
+    <div class="cta-title">Ready to Build<br>Your Website?</div>
+    <div class="cta-sub">I'll give you a fair quote and get started right away.</div>
+  </div>
+  <a class="btn-white" href="contact.html">Let's talk →</a>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <a href="index.html" style="text-decoration:none;display:flex;align-items:center;gap:.45rem;">
+    <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="18" r="17" fill="url(#footerLogoGrad)" />
+      <path d="M18 8 C18 8 26 13 26 20 C26 25 22.5 28 18 28 C13.5 28 10 25 10 20 C10 13 18 8 18 8Z" fill="rgba(255,255,255,0.25)" />
+      <line x1="18" y1="28" x2="18" y2="32" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M18 14 C18 14 14 19 13 23" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round" fill="none"/>
+      <circle cx="22" cy="10" r="1.2" fill="rgba(255,255,255,0.7)"/>
+      <defs>
+        <linearGradient id="footerLogoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#8c6d1f"/>
+          <stop offset="100%" stop-color="#d4aa50"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <span class="footer-logo">Local Grow</span>
+  </a>
+  <span>© 2026 · Web Developer · Made with ❤️ in India</span>
+  <div style="display:flex;gap:1.5rem;">
+    <a href="https://mail.google.com/mail/?view=cm&to=localgrow13@gmail.com" target="_blank">localgrow13@gmail.com</a>
+    <a href="https://wa.me/919445267918" target="_blank">+91 94452 67918</a>
+  </div>
+</footer>
+
+<!-- ══ BACK TO TOP BUTTON ══ -->
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
